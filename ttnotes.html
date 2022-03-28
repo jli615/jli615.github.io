@@ -7,6 +7,23 @@
 	</head>
 	<body>
 		<div class="blurb">
+        		<h1>Unit 2 Key Learnings, Tech Talk 2 Notes</h1>
+				<p>In coding languages, Reverse Polish Notation is used to calculate math expressions by using Stacks and the Shunting-yard algorithm to parse through the inputed data</p>
+				<p>Ex: 6 * 15 becomes 6 15 *</p>
+				<p>Operators are stored in a hash map based off of order of operations - which ones come first and thus take precedence</p>
+				<code>private final Map<String, Integer> OPERATORS = new HashMap<>();
+    {
+        // Map<"token", precedence>
+        OPERATORS.put("*", 3);
+        OPERATORS.put("/", 3);
+        OPERATORS.put("%", 3);
+        OPERATORS.put("+", 4);
+        OPERATORS.put("-", 4);
+    }</code>
+				<p></p>
+		</div><!-- /.blurb -->	
+		
+		<div class="blurb">
         		<h1>Unit 1 Key Learnings, Tech Talk 1 Notes</h1>
 				<p>Queues are a type of data structure in which elements are inserted at the end of a queue and removed from the beginning - first in first out</p>
 				<p>Stacks are a type of data structure in which elements are inserted at the beginning of a queue and removed from the beginning - first in last out</p>
